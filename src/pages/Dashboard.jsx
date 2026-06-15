@@ -85,7 +85,7 @@ const handleLogout = () => {
   navigate("/");
 };
   return (
-    <div className="container mt-5">
+   <div className="container mt-5 text-center">
      <button
   onClick={handleLogout}
   className="btn btn-dark logout-btn"
@@ -95,9 +95,9 @@ const handleLogout = () => {
 <h3 className="dashboard-title">
   URL Shortener Dashboard
 </h3>
-      <form
+     <form
   onSubmit={createShortUrl}
-  className="d-flex justify-content-center gap-2 mb-4"
+  className="d-flex justify-content-center align-items-center gap-2 mb-4"
 >
   <input
     type="text"
@@ -122,10 +122,8 @@ const handleLogout = () => {
   <div
     key={url.id}
     className="card shadow mb-3"
-    style={{
-      maxWidth: "650px",
-      margin: "auto"
-    }}
+    className="card shadow mb-3 mx-auto"
+className="form-control custom-input"
   >
     <div className="card-body">
           <p>
