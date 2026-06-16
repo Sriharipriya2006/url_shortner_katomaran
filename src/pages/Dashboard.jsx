@@ -9,6 +9,7 @@ function Dashboard() {
   const [originalUrl, setOriginalUrl] = useState("");
 //    const [urls, setUrls] = useState([]);
    const navigate = useNavigate();
+   const [expiryDate, setExpiryDate] = useState("");
 
   useEffect(() => {
     fetchUrls();
@@ -30,6 +31,11 @@ function Dashboard() {
       console.log(error);
     }
   };
+//   <input
+//   type="datetime-local"
+//   value={expiryDate}
+//   onChange={(e) => setExpiryDate(e.target.value)}
+// />
 
   const createShortUrl = async (e) => {
   e.preventDefault();
@@ -41,7 +47,8 @@ function Dashboard() {
       "/url/shorten",
       {
         url: originalUrl,
-      },
+        expiryDate,
+       },
       {
         headers: {
           Authorization: `Bearer ${token}`,
@@ -108,6 +115,14 @@ const handleLogout = () => {
     onChange={(e) => setOriginalUrl(e.target.value)}
   />
 
+  <input
+    type="datetime-local"
+    className="form-control custom-input"
+    style={{ width: "400px" }}
+    value={expiryDate}
+    onChange={(e) => setExpiryDate(e.target.value)}
+  />
+
   <button
     type="submit"
     className="btn btn-primary custom-btn"
@@ -121,9 +136,9 @@ const handleLogout = () => {
       {urls.map((url) => (
   <div
     key={url.id}
-    className="card shadow mb-3"
+    // className="card shadow mb-3"
     className="card shadow mb-3 mx-auto"
-className="form-control custom-input"
+// className="form-control custom-input"
   >
     <div className="card-body">
           <p>
