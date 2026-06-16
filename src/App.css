@@ -1,0 +1,79 @@
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #e0f2fe, #dbeafe, #ede9fe);
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  max-width: 700px;
+  margin: auto;
+}
+
+.dashboard-title {
+  text-align: center;
+  color: #1e3a8a;
+  font-weight: bold;
+  margin-bottom: 25px;
+}
+
+.url-card {
+  width: 650px;
+  margin: 10px auto;
+  padding: 15px;
+  border-radius: 0;
+  font-size: 14px;
+}
+
+.custom-input {
+  border-radius: 0px; /* square corners */
+  height: 50px;
+  border: 1px solid #cbd5e1;
+}
+
+
+.custom-btn {
+  height: 40px;
+  padding: 0 15px;
+  border-radius: 0;
+}
+
+.logout-btn {
+  float: right;
+}
+.btn {
+  border-radius: 0 !important;
+  font-size: 14px;
+  padding: 5px 12px;
+}
+.custom-input {
+  width: 300px !important;
+  height: 40px;
+}
+
+.card {
+  max-width: 650px;
+  margin: auto;
+}
+.custom-input {
+  width: 400px !important;
+}
+
+.dashboard-title {
+  color: #1e3a8a;
+  font-weight: bold;
+  margin-bottom: 25px;
+}
+
+.card {
+  border: none;
+  border-radius: 10px;
+}
+
+.card-body {
+  text-align: left;
+}
+
+.logout-btn {
+  float: right;
+}
